@@ -1,4 +1,3 @@
-Assume you oversee a small library and would like to develop a program that looks up books using their ISBNs. A list of books with their corresponding ISBN digits is in front of you. After the librarian inputs an ISBN, your software will look through the list to locate the relevant book.  The book's title and other details will be shown if the book is located. A notice stating that the book is not available in the library will appear if it cannot be located.
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -35,9 +34,9 @@ public:
 
 int main() {
     Library obj;
-    obj.add("1000", "The Guide", "R.k.Narayan");
-    obj.add("2000", "A Fine Balance", "Rohinton Mistry");
-    obj.add("3000", "Mndnight children", "Salman Rushdie");
+    obj.add("10", "The InterPerter Of Maladies", "Jhumpa Lahiri");
+    obj.add("20", "The Inheritance of Loss", "Kiran Desai");
+    obj.add("30", "Red Earth and Pouring Rain", "Vikram chandra");
     
     string input_isbn;
     cout << "Enter ISBN: ";
@@ -45,5 +44,7 @@ int main() {
     obj.display(input_isbn);
     
     return 0;
+}
+
 }
 
